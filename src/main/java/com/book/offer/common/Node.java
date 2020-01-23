@@ -93,7 +93,7 @@ public class Node {
         }
         Stack<Node> stack = new Stack<>();
         stack.push(root);
-        Node last = null;
+        Node last = new Node(-1);
         while(!stack.isEmpty()) {
             Node node = stack.peek();
             if(node.left != null && last != node.left && last != node.right) {
