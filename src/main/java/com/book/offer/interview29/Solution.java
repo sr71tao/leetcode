@@ -27,22 +27,22 @@ public class Solution {
             return start;
         }
         int num = nums[start];
-        int i = start+1, j = end;
+        int i = start, j = end;
         while(i < j) {
-            while(i < j && num < nums[j]) {
+            while(i < j && num <= nums[j]) {
                 j--;
             }
             if (i < j) {
                 nums[i++] = nums[j];
             }
-            while(i < j && num > nums[i]) {
+            while(i < j && num >= nums[i]) {
                 i++;
             }
             if (i < j) {
                 nums[j--] = nums[i];
             }
         }
-
+        nums[i] = num;
         return i;
     }
 
