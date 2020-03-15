@@ -3,7 +3,6 @@ package com.book.offer.interview50;
 import com.book.offer.common.Node;
 
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Created by yuntao.wu on 2020/3/15.
