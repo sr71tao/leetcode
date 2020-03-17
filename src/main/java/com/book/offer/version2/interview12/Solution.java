@@ -1,4 +1,4 @@
-package com.book.offer.verion2.interview12;
+package com.book.offer.version2.interview12;
 
 /**
  * Created by yuntao.wu on 2020/3/15.
@@ -13,7 +13,7 @@ public class Solution {
                         {'a','b','t','g'},
                         {'c','f','c','s'},
                         {'j','d','e','h'}
-                        },
+                },
                 "ecsg"
         ));
     }
