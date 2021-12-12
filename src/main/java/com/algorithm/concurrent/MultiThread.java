@@ -1,4 +1,4 @@
-package com.algorithm;
+package com.algorithm.concurrent;
 
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.Condition;
@@ -20,13 +20,13 @@ public class MultiThread {
         /**
          * 使用lock / synchronized
          */
-        /*MyThread thread1 = new MyThread("thread1", 0, "A");
+        MyThread thread1 = new MyThread("thread1", 0, "A");
         MyThread thread2 = new MyThread("thread2", 1, "B");
         MyThread thread3 = new MyThread("thread3", 2, "C");
 
         thread1.start();
         thread2.start();
-        thread3.start();*/
+        thread3.start();
 
         /**
          * 使用semaphore
@@ -46,17 +46,17 @@ public class MultiThread {
         /**
          * 使用condition
          */
-        Condition conditionA = lock.newCondition();
-        Condition conditionB = lock.newCondition();
-        Condition conditionC = lock.newCondition();
-
-        CondThread condThreadA = new CondThread("threadA", 0, conditionA, conditionB);
-        CondThread condThreadB = new CondThread("threadB", 1, conditionB, conditionC);
-        CondThread condThreadC = new CondThread("threadC", 2, conditionC, conditionA);
-
-        condThreadA.start();
-        condThreadB.start();
-        condThreadC.start();
+//        Condition conditionA = lock.newCondition();
+//        Condition conditionB = lock.newCondition();
+//        Condition conditionC = lock.newCondition();
+//
+//        CondThread condThreadA = new CondThread("threadA", 0, conditionA, conditionB);
+//        CondThread condThreadB = new CondThread("threadB", 1, conditionB, conditionC);
+//        CondThread condThreadC = new CondThread("threadC", 2, conditionC, conditionA);
+//
+//        condThreadA.start();
+//        condThreadB.start();
+//        condThreadC.start();
 
     }
 
