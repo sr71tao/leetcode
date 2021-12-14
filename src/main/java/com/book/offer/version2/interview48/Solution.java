@@ -1,4 +1,4 @@
-package com.book.offer.interview48;
+package com.book.offer.version2.interview48;
 
 /**
  * 最长不含重复字符子串

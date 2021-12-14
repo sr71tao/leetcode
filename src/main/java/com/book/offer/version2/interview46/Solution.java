@@ -1,4 +1,4 @@
-package com.book.offer.interview46;
+package com.book.offer.version2.interview46;
 
 /**
  * 把数字翻译成字符串
