@@ -12,7 +12,7 @@ import java.util.Arrays;
  * [4,1,8,3]
  * ]
  */
-public class ToutiaoInterView1 {
+public class ToutiaoInterview1 {
 
     public static void main(String[] args) {
         int[][] nums = new int[][]{
