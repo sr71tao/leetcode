@@ -1,7 +1,5 @@
 package com.leetcode.cn;
 
-import com.google.common.collect.Lists;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
