@@ -9,10 +9,8 @@ import java.util.Arrays;
 public class MergeSort {
 
     public static void main(String[] args) {
-        int[] nums = new int[]{3, 9, 7, 5, 1, 10, 4, 2};
-        if (nums == null || nums.length < 1) {
-            return;
-        }
+        int[] nums = new int[]{3, 9, 7, 5, 1, 2, 7, 10, 4, 2};
+//        int[] nums = new int[]{1,1,1,1,0,0,0,0};
 //        int[] target = new int[nums.length];
 //        mergeSort(nums, target, 0, nums.length - 1);
 //        Arrays.stream(target).forEach(e -> System.out.print(e + " "));
@@ -51,8 +49,8 @@ public class MergeSort {
             return;
         }
         int mid = (start + end) / 2;
-        mergeSort(target, source, start, mid);
-        mergeSort(target, source, mid + 1, end);
+        mergeSort2(target, source, start, mid);
+        mergeSort2(target, source, mid + 1, end);
         merge(source, target, start, mid, mid+1, end);
     }
 
